@@ -1,0 +1,57 @@
+html {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+#container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#header {
+    padding: 30px 20px;
+    border-bottom: 1px solid darkgray;
+}
+
+#header ul {
+    margin-top: 5px;
+}
+
+#header li {
+    display: inline-block;
+}
+
+#footer {
+    padding: 20px 20px;
+    font-size: 0.75rem;
+    border-top: 1px solid darkgray;
+}
+
+.content {
+    margin: 20px;
+}
+
+.content p {
+    margin: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: darkgray;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+blockquote {
+    margin-left: 10px;
+    padding: 10px;
+    border-left: 5px solid darkgrey;
+    width: 50%;
+}
