@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "start": "webpack-dev-server --progress -d --colors --content-base ./public"
   },
   "repository": {
     "type": "git",
@@ -21,7 +22,8 @@
     "extract-text-webpack-plugin": "^2.1.2",
     "optimize-css-assets-webpack-plugin": "^2.0.0",
     "style-loader": "^0.18.2",
-    "webpack": "^2.6.1"
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.0"
   },
   "dependencies": {
     "reset-css": "^2.2.0"
