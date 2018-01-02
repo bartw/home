@@ -10,47 +10,47 @@ html {
   background-color: white;
 }
 
-#header {
+header {
   padding: 30px 20px;
   border-bottom: 1px solid darkgray;
 }
 
-#header ul {
+header ul {
   margin-top: 5px;
 }
 
-#header li {
+header li {
   display: inline-block;
   font-size: 1.25rem;
 }
 
-#footer {
+footer {
   padding: 20px 20px;
   font-size: 0.75rem;
   border-top: 1px solid darkgray;
 }
 
-.content {
+main {
   margin: 20px;
 }
 
-.content > div {
+main > div {
   margin-bottom: 20px;
 }
 
-.content p {
+main p {
   margin: 10px 0;
 }
 
-.content ul ul {
+main ul ul {
   list-style-type: disc;
 }
 
-.content li {
+main li {
   margin-bottom: 10px;
 }
 
-.content ul ul li {
+main ul ul li {
   margin-left: 20px;
 }
 
