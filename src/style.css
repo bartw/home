@@ -1,11 +1,13 @@
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
+  background-color: #e7e7e7;
 }
 
 #container {
-  max-width: 700px;
+  max-width: 800px;
   margin: 0 auto;
+  background-color: white;
 }
 
 #header {
@@ -96,15 +98,15 @@ blockquote {
   content: "+";
 }
 
-.accordion-item input[type=checkbox] {
+.accordion-item input[type="checkbox"] {
   display: none;
 }
 
-.accordion-item input[type=checkbox]:checked ~ .accordion-content {
+.accordion-item input[type="checkbox"]:checked ~ .accordion-content {
   display: block;
 }
 
-.accordion-item input[type=checkbox]:checked ~ .accordion-header h2::after {
+.accordion-item input[type="checkbox"]:checked ~ .accordion-header h2::after {
   float: right;
   content: "\2013";
 }
