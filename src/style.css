@@ -21,6 +21,7 @@ html {
 
 #header li {
   display: inline-block;
+  font-size: 1.25rem;
 }
 
 #footer {
