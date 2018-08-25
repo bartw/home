@@ -3,10 +3,8 @@
 ## Scripts
 
 ```shell
-npm run build
 npm start
 ```
-
 
 ## License
 
