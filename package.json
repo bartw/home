@@ -1,11 +1,9 @@
 {
   "name": "home",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "version": "2.0.0",
   "scripts": {
-    "build": "webpack",
-    "start": "webpack-dev-server --progress -d --colors --content-base ./public"
+    "build": "true",
+    "start": "http-server ./public"
   },
   "repository": {
     "type": "git",
@@ -18,14 +16,6 @@
   },
   "homepage": "https://github.com/bartw/home#readme",
   "devDependencies": {
-    "css-loader": "^0.28.4",
-    "extract-text-webpack-plugin": "^2.1.2",
-    "optimize-css-assets-webpack-plugin": "^2.0.0",
-    "style-loader": "^0.18.2",
-    "webpack": "^2.6.1",
-    "webpack-dev-server": "^2.5.0"
-  },
-  "dependencies": {
-    "reset-css": "^2.2.0"
+    "http-server": "^0.11.1"
   }
 }

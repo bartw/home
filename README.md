@@ -1,4 +1,4 @@
-# Repository for bartwijnants.com
+# Repository for bartwijnants.be
 
 ## Scripts
 
@@ -10,4 +10,4 @@ npm start
 
 ## License
 
-This repo is licensed under the [MIT License](http://www.opensource.org/licenses/mit-license.php).
+This repo is licensed under the [MIT License](LICENSE).

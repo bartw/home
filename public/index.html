@@ -24,135 +24,65 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    <script src="https://use.fontawesome.com/f241ae574b.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 
 <body>
-    <div id="container">
-        <header>
+    <main>
+        <section id="content">
             <h1>Bart Wijnants</h1>
             <ul>
                 <li>
-                    <a href="https://github.com/bartw" title="github">
-                        <i class="fa fa-github" aria-hidden="true"></i>
+                    <a href="https://github.com/bartw" title="github" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-github"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://medium.com/@bartwijnants" title="medium">
-                        <i class="fa fa-medium" aria-hidden="true"></i>
+                    <a href="https://medium.com/@bartwijnants" title="medium" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-medium"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://be.linkedin.com/in/bart-wijnants-5a800650" title="linkedin">
-                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                    <a href="https://be.linkedin.com/in/bart-wijnants-5a800650" title="linkedin" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/bartwijnants" title="twitter">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <a href="https://twitter.com/bartwijnants" title="twitter" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-twitter"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/bart.wijnants" title="facebook">
-                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    <a href="https://www.facebook.com/bart.wijnants" title="facebook" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-facebook"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="https://keybase.io/bartwijnants" title="keybase">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
+                    <a href="https://keybase.io/bartwijnants" title="keybase" target="_blank" rel="noopener noreferrer">
+                        <i class="fab fa-keybase"></i>
                     </a>
                 </li>
             </ul>
-        </header>
-        <main>
             <div id="bio">
                 <p>As
-                    <a href="https://en.wikipedia.org/wiki/Mick_Jagger" target="_blank">Mick Jagger</a> sang it in
-                    <a href="https://en.wikipedia.org/wiki/Sympathy_for_the_Devil" target="_blank">Sympathy For The Devil</a>:</p>
+                    <a href="https://en.wikipedia.org/wiki/Mick_Jagger" target="_blank" rel="noopener noreferrer">Mick Jagger</a>
+                    sang it in
+                    <a href="https://en.wikipedia.org/wiki/Sympathy_for_the_Devil" target="_blank" rel="noopener noreferrer">Sympathy
+                        For The Devil</a>:</p>
                 <blockquote>Please allow me to introduce myself. I'm a man of wealth and taste.</blockquote>
                 <p>Well maybe just the first sentence. I'm not quite wealthy and a lot of people will strongly advice against
-                    my taste.</p>
+                    my taste.
+                </p>
                 <p>I'm Bart, father of 2 boys, developer by trade, retired ice hockey player and knowledge sponge.</p>
                 <p>I try to live by the
-                    <a href="https://people.apache.org/~fhanik/kiss.html" target="_blank">KISS</a> principle but sometimes I keep it more stupid than simple.</p>
+                    <a href="https://people.apache.org/~fhanik/kiss.html" target="_blank" rel="noopener noreferrer">KISS</a>
+                    principle but sometimes I keep it more stupid than simple.</p>
                 <p>Peace out.</p>
             </div>
-            <div id="experience" class="accordion-item">
-                <input type="checkbox" id="experience-checkbox" />
-                <div class="accordion-header">
-                    <label for="experience-checkbox">
-                        <h2>Professional experience</h2>
-                    </label>
-                </div>
-                <div class="accordion-content">
-                    <ul>
-                        <li>
-                            <h3>Wolters Kluwer (2007
-                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 2015)</h3>
-                            <ul>
-                                <li>
-                                    <p>Various projects using C++ and C# as developer and lead developer.</p>
-                                </li>
-                                <li>
-                                    <p>
-                                        Lead developer of a web application that focused on ease of use. The back-end was built using ASP.NET MVC 4 and integrated
-                                        with a Borland C++ calculation engine. The front-end was built using KnockoutJs,
-                                        JQuery, LESS and Bootstrap.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p>Customer support</p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <h3>Sirus (2015
-                                <i class="fa fa-long-arrow-right" aria-hidden="true"></i> ...)</h3>
-                            <ul>
-                                <li>
-                                    <p> 05-2015
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 09-2015</p>
-                                    <p>
-                                        Development of a web application using ASP.NET MVC 5, JQuery, WCF and Entity Framework. Development of soap web services
-                                        using WCF and Entity Framework. Integration with JBoss Fuse.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p> 10-2015
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i> 06-2017</p>
-                                    <p>
-                                        Full stack developer in an agile team. Using a TDD approach to build an internal web application. The main technologies used
-                                        are AngularJS, ASP.NET Web API, Entity Framework and NServiceBus.
-                                    </p>
-                                </li>
-                                <li>
-                                    <p> 07-2017
-                                        <i class="fa fa-long-arrow-right" aria-hidden="true"></i> ...</p>
-                                    <p>
-                                        Tech lead of an agile remote team in Bucharest on a project to streamline the internal processes at Q-Park.
-                                    </p>
-                                    <p>
-                                        Main responsibilities:
-                                        <ul>
-                                            <li>Coaching to continuously advance the team.</li>
-                                            <li>Enhance communication between remote and local teams.</li>
-                                            <li>Align technical improvements with other team leads and architects.</li>
-                                            <li>Full stack developer.</li>
-                                        </ul>
-                                    </p>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </main>
-        <footer>
-            <p>
-                <i class="fa fa-cutlery" aria-hidden="true"></i> keeping it tasteful since 1984</p>
-        </footer>
-    </div>
+        </section>
+    </main>
 </body>
 
 </html>
