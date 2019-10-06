@@ -5,6 +5,7 @@ const Box = styled.div`
   display: block;
   padding: ${spacing.small};
   background-color: ${colors.dark};
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
 `;
 
 export default Box;

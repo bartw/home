@@ -7,7 +7,6 @@ import ExternalLink from "./external-link";
 
 const Bio = () => (
   <Section>
-    <Subtitle>About me</Subtitle>
     <Paragraph>
       As{" "}
       <ExternalLink href="https://en.wikipedia.org/wiki/Mick_Jagger">

@@ -35,7 +35,6 @@ const ListItem = styled.li`
 
 const SocialLinks = () => (
   <Section>
-    <Subtitle>Find me on</Subtitle>
     <List>
       {links.map(({ href, icon }, index) => (
         <ListItem key={index}>
