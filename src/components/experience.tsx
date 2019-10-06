@@ -11,7 +11,6 @@ const jobs = [
     company: "Sparkcentral",
     jobTitle: "Software Engineer",
     technologies: [
-      { id: "Agile", name: "Agile" },
       { id: "XP", name: "XP" },
       { id: "React", name: "React" },
       { id: "GraphQL", name: "GraphQL" },
