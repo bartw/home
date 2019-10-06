@@ -1,20 +1,41 @@
 {
   "name": "home",
-  "version": "2.0.0",
+  "description": "http://bartwijnants.be",
+  "version": "3.0.0",
+  "license": "MIT",
   "scripts": {
-    "start": "http-server ./public"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.5",
+    "babel-plugin-styled-components": "^1.10.6",
+    "gatsby": "^2.15.29",
+    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-styled-components": "^3.1.8",
+    "gatsby-plugin-typescript": "^2.1.11",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.4.0",
+    "styled-reset": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react-helmet": "^5.0.11",
+    "@types/styled-components": "^4.1.19",
+    "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bartw/home.git"
+    "url": "https://github.com/bartw/home"
   },
-  "author": "Bart Wijnants",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/bartw/home/issues"
-  },
-  "homepage": "https://github.com/bartw/home#readme",
-  "devDependencies": {
-    "http-server": "^0.11.1"
   }
 }
