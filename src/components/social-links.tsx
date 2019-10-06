@@ -1,10 +1,12 @@
 import React from "react";
+import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faMedium,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
+import { fontSize } from "../global-style";
 import Section from "./section";
 import Box from "./box";
 import ExternalLink from "./external-link";
@@ -24,13 +26,17 @@ const links = [
   }
 ];
 
+const Icon = styled(FontAwesomeIcon)`
+  font-size: ${fontSize.large};
+`;
+
 const SocialLinks = () => (
   <Section>
     <WrapList items={links}>
       {({ href, icon }) => (
         <ExternalLink href={href}>
           <Box>
-            <FontAwesomeIcon icon={icon} fixedWidth />
+            <Icon icon={icon} fixedWidth />
           </Box>
         </ExternalLink>
       )}

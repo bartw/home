@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import { spacing } from "../global-style";
+import { spacing, lineHeight } from "../global-style";
 
 const Paragraph = styled.p`
   margin-top: ${spacing.small};
-  line-height: 1.25em;
+  line-height: ${lineHeight.medium};
 `;
 
 export default Paragraph;

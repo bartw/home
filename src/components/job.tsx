@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { colors, spacing } from "../global-style";
+import { colors, spacing, fontSize, lineHeight } from "../global-style";
 import WrapList from "./wrap-list";
 import Box from "./box";
 
@@ -13,7 +13,7 @@ type Props = {
 };
 
 const StyledDiv = styled.div`
-  line-height: 1.25em;
+  line-height: ${lineHeight.medium};
 `;
 
 const FromTo = styled(StyledDiv)`
@@ -22,12 +22,14 @@ const FromTo = styled(StyledDiv)`
 `;
 
 const StyledBox = styled(Box)`
-  font-size: 0.8em;
+  font-size: ${fontSize.small};
 `;
 
 const Job = ({ from, to, company, jobTitle, technologies }: Props) => (
   <div>
-    <FromTo>{from} &rarr; {to}</FromTo>
+    <FromTo>
+      {from} &rarr; {to}
+    </FromTo>
     <StyledDiv>{jobTitle}</StyledDiv>
     <StyledDiv>@ {company}</StyledDiv>
     <WrapList items={technologies}>

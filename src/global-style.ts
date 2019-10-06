@@ -15,12 +15,24 @@ export const spacing = {
   large: "20px"
 };
 
+export const fontSize = {
+  small: "12px",
+  medium: "14px",
+  large: "16px",
+  extraLarge: "20px"
+};
+
+export const lineHeight = {
+  small: "1em",
+  medium: "1.25em"
+};
+
 const GlobalStyle = createGlobalStyle`
   ${reset}
   
   body {
     font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-size: ${fontSize.medium};
     background-color: ${colors.background};
     color: ${colors.text};
   }
