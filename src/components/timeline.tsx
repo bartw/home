@@ -7,20 +7,16 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  margin-top: ${spacing.small};
   position: relative;
+  padding-top: ${spacing.small};
 
   &:before {
     content: "";
     position: absolute;
     border-left: 1px solid ${colors.dark};
-    top: calc(50% + 4px);
+    top: 0;
     left: calc(3px - ${spacing.medium});
     height: 100%;
-  }
-
-  &:last-child:before {
-    content: none;
   }
 
   &:after {
@@ -31,7 +27,7 @@ const ListItem = styled.li`
     height: 3px;
     width: 3px;
     background: ${colors.veryLight};
-    top: calc(50% - (5px / 2));
+    top: 0;
     left: calc(1px - ${spacing.medium});
   }
 `;

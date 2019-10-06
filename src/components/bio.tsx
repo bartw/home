@@ -1,6 +1,5 @@
 import React from "react";
 import Section from "./section";
-import Subtitle from "./subtitle";
 import Paragraph from "./paragraph";
 import Blockquote from "./blockquote";
 import ExternalLink from "./external-link";
