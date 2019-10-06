@@ -2,20 +2,17 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { colors, spacing } from "../global-style";
 
-const List = styled.ul`
-  margin-left: ${spacing.medium};
-`;
-
 const ListItem = styled.li`
   position: relative;
   padding-top: ${spacing.small};
+  padding-left: ${spacing.medium};
 
   &:before {
     content: "";
     position: absolute;
     border-left: 1px solid ${colors.dark};
     top: 0;
-    left: calc(3px - ${spacing.medium});
+    left: 2px;
     height: 100%;
   }
 
@@ -28,7 +25,7 @@ const ListItem = styled.li`
     width: 3px;
     background: ${colors.veryLight};
     top: 0;
-    left: calc(1px - ${spacing.medium});
+    left: 0;
   }
 `;
 
@@ -42,11 +39,11 @@ type Props<T extends Item> = {
 };
 
 const Timeline = <T extends Item>({ items, children }: Props<T>) => (
-  <List>
+  <ul>
     {items.map(item => (
       <ListItem key={item.id}>{children(item)}</ListItem>
     ))}
-  </List>
+  </ul>
 );
 
 export default Timeline;
