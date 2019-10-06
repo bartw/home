@@ -17,7 +17,7 @@ const StyledDiv = styled.div`
 `;
 
 const FromTo = styled(StyledDiv)`
-  color: ${colors.light};
+  color: ${colors.textContrast};
   margin-bottom: ${spacing.small};
 `;
 

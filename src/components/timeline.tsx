@@ -10,7 +10,7 @@ const ListItem = styled.li`
   &:before {
     content: "";
     position: absolute;
-    border-left: 1px solid ${colors.dark};
+    border-left: 1px solid ${colors.backgroundContrast};
     top: 0;
     left: 2px;
     height: 100%;
@@ -19,11 +19,11 @@ const ListItem = styled.li`
   &:after {
     content: "";
     position: absolute;
-    border: 1px solid ${colors.veryLight};
+    border: 1px solid ${colors.text};
     border-radius: 50%;
     height: 3px;
     width: 3px;
-    background: ${colors.veryLight};
+    background: ${colors.text};
     top: 0;
     left: 0;
   }

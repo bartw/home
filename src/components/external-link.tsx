@@ -6,7 +6,7 @@ type Props = { href: string; className?: string, children: ReactNode };
 
 const Link = styled.a`
   text-decoration: underline;
-  color: ${colors.veryLight};
+  color: ${colors.text};
 
   &:hover {
     text-decoration: none;
