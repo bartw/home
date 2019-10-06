@@ -7,6 +7,10 @@ module.exports = {
         allExtensions: true
       }
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: { fonts: [{ family: `Roboto` }] }
+    },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {

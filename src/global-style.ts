@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   
   body {
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     background-color: ${colors.veryDark};
     color: ${colors.veryLight};
