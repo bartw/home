@@ -21,7 +21,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     font-family: sans-serif;
     font-size: 14px;
-    font-weight: 200;
     background-color: ${colors.veryDark};
     color: ${colors.veryLight};
   }
