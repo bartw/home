@@ -6,7 +6,7 @@ const Blockquote = styled.blockquote`
   margin-left: ${spacing.medium};
   padding-left: ${spacing.small};
   border-left: 3px solid ${colors.textContrast};
-  color: ${colors.textContrast}
+  color: ${colors.textContrast};
 `;
 
 export default Blockquote;

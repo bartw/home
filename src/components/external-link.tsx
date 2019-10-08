@@ -2,7 +2,7 @@ import React, { ReactNode } from "react";
 import styled from "styled-components";
 import { colors } from "../global-style";
 
-type Props = { href: string; className?: string, children: ReactNode };
+type Props = { href: string; className?: string; children: ReactNode };
 
 const Link = styled.a`
   text-decoration: underline;
@@ -15,7 +15,12 @@ const Link = styled.a`
 `;
 
 const ExternalLink = ({ href, className, children }: Props) => (
-  <Link href={href} target="_blank" rel="noopener noreferrer" className={className}>
+  <Link
+    href={href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className={className}
+  >
     {children}
   </Link>
 );
