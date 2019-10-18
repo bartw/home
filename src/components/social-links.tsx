@@ -13,16 +13,23 @@ import ExternalLink from "./external-link";
 import WrapList from "./wrap-list";
 
 const links = [
-  { id: "github", href: "https://github.com/bartw", icon: faGithub },
+  {
+    id: "github",
+    href: "https://github.com/bartw",
+    icon: faGithub,
+    label: "GitHub"
+  },
   {
     id: "medium",
     href: "https://medium.com/@bartwijnants",
-    icon: faMedium
+    icon: faMedium,
+    label: "Medium"
   },
   {
     id: "linkedin",
     href: "https://be.linkedin.com/in/bart-wijnants-5a800650",
-    icon: faLinkedin
+    icon: faLinkedin,
+    label: "LinkedIn"
   }
 ];
 
@@ -33,8 +40,8 @@ const Icon = styled(FontAwesomeIcon)`
 const SocialLinks = () => (
   <Section>
     <WrapList items={links}>
-      {({ href, icon }) => (
-        <ExternalLink href={href}>
+      {({ href, icon, label }) => (
+        <ExternalLink href={href} label={label}>
           <Box>
             <Icon icon={icon} fixedWidth />
           </Box>
