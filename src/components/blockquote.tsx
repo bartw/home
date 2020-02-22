@@ -5,8 +5,8 @@ const Blockquote = styled.blockquote`
   margin-top: ${spacing.small};
   margin-left: ${spacing.medium};
   padding-left: ${spacing.small};
-  border-left: 3px solid ${colors.textContrast};
-  color: ${colors.textContrast};
+  border-left: 3px solid ${({theme}) => theme.textContrast};
+  color: ${({theme}) => theme.textContrast};
 `;
 
 export default Blockquote;

@@ -6,6 +6,7 @@ import {
   faMedium,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { fontSize, spacing } from "../global-style";
 import ExternalLink from "./external-link";
 
@@ -54,12 +55,27 @@ const ListItem = styled.li`
   }
 `;
 
+const Toggle = styled.button`
+  background: none !important;
+  border: none;
+  margin: 0;
+  padding: 0 !important;
+  cursor: pointer;
+  font-size: ${fontSize.medium};
+  color: ${({ theme }) => theme.text};
+`;
+
 const Icon = styled(FontAwesomeIcon)`
   font-size: ${fontSize.extraLarge};
 `;
 
-const SocialLinks = () => (
+const SocialLinks = ({ theme, toggleTheme }) => (
   <List>
+    <ListItem>
+      <Toggle onClick={toggleTheme}>
+        <Icon icon={theme === "light" ? faMoon : faSun} fixedWidth />
+      </Toggle>
+    </ListItem>
     {links.map(({ id, href, icon, label }) => (
       <ListItem key={id}>
         <ExternalLink href={href} label={label}>

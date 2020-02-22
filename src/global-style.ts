@@ -1,21 +1,28 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-const lightColors = {
+type Theme = {
+  background: string;
+  backgroundContrast: string;
+  text: string;
+  textContrast: string;
+};
+
+const light = {
   background: "#eee",
   backgroundContrast: "#ccc",
   text: "#222",
   textContrast: "#666"
 };
 
-const darkColors = {
+const dark = {
   background: "#222",
   backgroundContrast: "#666",
   text: "#ddd",
   textContrast: "#bbb"
 };
 
-export const colors = darkColors;
+export const colors = { light, dark };
 
 export const spacing = {
   extraSmall: "5px",
@@ -38,14 +45,14 @@ export const lineHeight = {
   medium: "1.25em"
 };
 
-const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
   ${reset}
   
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    background-color: ${colors.background};
-    color: ${colors.text};
+    background-color: ${({ theme }) => theme.background};
+    color: ${({ theme }) => theme.text};
   }
 `;
 

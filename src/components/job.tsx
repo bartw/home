@@ -25,7 +25,7 @@ const Company = styled(StyledDiv)`
 `;
 
 const FromTo = styled(StyledDiv)`
-  color: ${colors.textContrast};
+  color: ${({theme}) => theme.textContrast};
   margin-bottom: ${spacing.small};
 `;
 

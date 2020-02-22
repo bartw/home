@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { spacing } from "../global-style";
 import Title from "./title";
-import SocialLinks from "./social-links";
+import Actions from "./actions";
 import Bio from "./bio";
 import Experience from "./experience";
 
@@ -12,9 +12,9 @@ const InnerContainer = styled.div`
   margin: 0 auto;
 `;
 
-const App = () => (
+const App = ({ theme, toggleTheme }) => (
   <>
-    <SocialLinks />
+    <Actions theme={theme} toggleTheme={toggleTheme} />
     <Title>Bart Wijnants</Title>
     <InnerContainer>
       <Bio />

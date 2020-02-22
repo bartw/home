@@ -11,7 +11,7 @@ type Props = {
 
 const Link = styled.a`
   text-decoration: underline;
-  color: ${colors.text};
+  color: ${({theme}) => theme.text};
 
   &:hover {
     text-decoration: none;
