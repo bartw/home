@@ -9,7 +9,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: { fonts: [{ family: `Roboto` }] }
+      options: { fonts: [{ family: `Open Sans` }, { family: `Space Mono` }] }
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,

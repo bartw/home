@@ -6,11 +6,8 @@ import {
   faMedium,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
-import { fontSize } from "../global-style";
-import Section from "./section";
-import Box from "./box";
+import { fontSize, spacing } from "../global-style";
 import ExternalLink from "./external-link";
-import WrapList from "./wrap-list";
 
 const links = [
   {
@@ -33,22 +30,44 @@ const links = [
   }
 ];
 
+const List = styled.ul`
+  position: fixed;
+  top: 50%;
+  right: ${spacing.extraSmall};
+  transform: translateY(-50%);
+
+  @media (max-width: 480px) {
+    position: static;
+    top: 0;
+    right: 0;
+    transform: none;
+    text-align: center;
+  }
+`;
+
+const ListItem = styled.li`
+  margin-top: ${spacing.medium};
+
+  @media (max-width: 480px) {
+    display: inline-block;
+    margin: ${spacing.medium};
+  }
+`;
+
 const Icon = styled(FontAwesomeIcon)`
-  font-size: ${fontSize.large};
+  font-size: ${fontSize.extraLarge};
 `;
 
 const SocialLinks = () => (
-  <Section>
-    <WrapList items={links}>
-      {({ href, icon, label }) => (
+  <List>
+    {links.map(({ id, href, icon, label }) => (
+      <ListItem key={id}>
         <ExternalLink href={href} label={label}>
-          <Box>
-            <Icon icon={icon} fixedWidth />
-          </Box>
+          <Icon icon={icon} fixedWidth />
         </ExternalLink>
-      )}
-    </WrapList>
-  </Section>
+      </ListItem>
+    ))}
+  </List>
 );
 
 export default SocialLinks;

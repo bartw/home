@@ -16,6 +16,14 @@ const StyledDiv = styled.div`
   line-height: ${lineHeight.medium};
 `;
 
+const JobTitle = styled(StyledDiv)`
+  font-variant: small-caps;
+`;
+
+const Company = styled(StyledDiv)`
+  font-variant: small-caps;
+`;
+
 const FromTo = styled(StyledDiv)`
   color: ${colors.textContrast};
   margin-bottom: ${spacing.small};
@@ -30,8 +38,8 @@ const Job = ({ from, to, company, jobTitle, technologies }: Props) => (
     <FromTo>
       {from} &rarr; {to}
     </FromTo>
-    <StyledDiv>{jobTitle}</StyledDiv>
-    <StyledDiv>@ {company}</StyledDiv>
+    <JobTitle>{jobTitle}</JobTitle>
+    <Company>@ {company}</Company>
     <WrapList items={technologies}>
       {({ name }) => <StyledBox>{name}</StyledBox>}
     </WrapList>

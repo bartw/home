@@ -1,25 +1,36 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-export const colors = {
-  background: "#252525",
-  backgroundContrast: "#4b4b4b",
-  textContrast: "#a7a7a7",
-  text: "#cccccc",
-  accent: "#86CB92"
+const lightColors = {
+  background: "#eee",
+  backgroundContrast: "#ccc",
+  text: "#222",
+  textContrast: "#666"
 };
 
+const darkColors = {
+  background: "#222",
+  backgroundContrast: "#666",
+  text: "#ddd",
+  textContrast: "#bbb"
+};
+
+export const colors = darkColors;
+
 export const spacing = {
+  extraSmall: "5px",
   small: "10px",
   medium: "15px",
   large: "20px"
 };
 
 export const fontSize = {
-  small: "12px",
-  medium: "14px",
-  large: "16px",
-  extraLarge: "20px"
+  small: "0.8em",
+  medium: "1em",
+  large: "1.5em",
+  extraLarge: "2em",
+  extraExtraLarge: "3em",
+  extraExtraExtraLarge: "4em"
 };
 
 export const lineHeight = {
@@ -31,8 +42,8 @@ const GlobalStyle = createGlobalStyle`
   ${reset}
   
   body {
-    font-family: 'Roboto', sans-serif;
-    font-size: ${fontSize.medium};
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
     background-color: ${colors.background};
     color: ${colors.text};
   }
