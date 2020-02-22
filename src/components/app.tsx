@@ -15,9 +15,7 @@ const InnerContainer = styled.div`
 const App = () => (
   <>
     <SocialLinks />
-    <header>
-      <Title>Bart Wijnants</Title>
-    </header>
+    <Title>Bart Wijnants</Title>
     <InnerContainer>
       <Bio />
       <Experience />
