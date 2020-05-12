@@ -10,7 +10,7 @@ const ListItem = styled.li`
   &:before {
     content: "";
     position: absolute;
-    border-left: 1px solid ${({theme}) => theme.backgroundContrast};
+    border-left: 1px solid ${({ theme }) => theme.backgroundContrast};
     top: 0;
     left: 2px;
     height: 100%;
@@ -19,11 +19,11 @@ const ListItem = styled.li`
   &:after {
     content: "";
     position: absolute;
-    border: 1px solid ${({theme}) => theme.text};
+    border: 1px solid ${({ theme }) => theme.text};
     border-radius: 50%;
     height: 3px;
     width: 3px;
-    background: ${({theme}) => theme.text};
+    background: ${({ theme }) => theme.text};
     top: 0;
     left: 0;
   }
@@ -40,7 +40,7 @@ type Props<T extends Item> = {
 
 const Timeline = <T extends Item>({ items, children }: Props<T>) => (
   <ul>
-    {items.map(item => (
+    {items.map((item) => (
       <ListItem key={item.id}>{children(item)}</ListItem>
     ))}
   </ul>

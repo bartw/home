@@ -4,7 +4,7 @@ import { colors, spacing } from "../global-style";
 const Box = styled.div`
   display: block;
   padding: ${spacing.small};
-  background-color: ${({theme}) => theme.backgroundContrast};
+  background-color: ${({ theme }) => theme.backgroundContrast};
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 `;
 

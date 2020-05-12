@@ -15,8 +15,8 @@ const jobs = [
       { id: "React", name: "React" },
       { id: "GraphQL", name: "GraphQL" },
       { id: "Redux", name: "Redux" },
-      { id: "Java", name: "Java" }
-    ]
+      { id: "Java", name: "Java" },
+    ],
   },
   {
     id: "sirus",
@@ -28,8 +28,8 @@ const jobs = [
       { id: "Scrum", name: "Scrum" },
       { id: "C#", name: "C#" },
       { id: "AngularJs", name: "AngularJs" },
-      { id: "NServiceBus", name: "NServiceBus" }
-    ]
+      { id: "NServiceBus", name: "NServiceBus" },
+    ],
   },
   {
     id: "wkb",
@@ -40,9 +40,9 @@ const jobs = [
     technologies: [
       { id: "C++", name: "C++" },
       { id: "C#", name: "C#" },
-      { id: "JavaScript", name: "JavaScript" }
-    ]
-  }
+      { id: "JavaScript", name: "JavaScript" },
+    ],
+  },
 ];
 
 const Experience = () => (

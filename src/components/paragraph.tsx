@@ -5,7 +5,7 @@ const Paragraph = styled.p`
   margin-top: ${spacing.small};
   line-height: ${lineHeight.medium};
   text-align: justify;
-  
+
   &:first-letter {
     font-size: ${fontSize.large};
   }

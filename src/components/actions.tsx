@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faMedium,
-  faLinkedin
+  faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { fontSize, spacing } from "../global-style";
@@ -15,20 +15,20 @@ const links = [
     id: "github",
     href: "https://github.com/bartw",
     icon: faGithub,
-    label: "GitHub"
+    label: "GitHub",
   },
   {
     id: "medium",
     href: "https://medium.com/@bartwijnants",
     icon: faMedium,
-    label: "Medium"
+    label: "Medium",
   },
   {
     id: "linkedin",
     href: "https://be.linkedin.com/in/bart-wijnants-5a800650",
     icon: faLinkedin,
-    label: "LinkedIn"
-  }
+    label: "LinkedIn",
+  },
 ];
 
 const List = styled.ul`

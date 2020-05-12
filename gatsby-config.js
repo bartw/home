@@ -4,12 +4,12 @@ module.exports = {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true,
-        allExtensions: true
-      }
+        allExtensions: true,
+      },
     },
     {
       resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: { fonts: [{ family: `Open Sans` }, { family: `Space Mono` }] }
+      options: { fonts: [{ family: `Open Sans` }, { family: `Space Mono` }] },
     },
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
@@ -22,8 +22,8 @@ module.exports = {
         background_color: `#252525`,
         theme_color: `#86CB92`,
         display: `minimal-ui`,
-        icon: `static/bw.svg`
-      }
-    }
-  ]
+        icon: `static/bw.svg`,
+      },
+    },
+  ],
 };

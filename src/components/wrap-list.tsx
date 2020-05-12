@@ -24,7 +24,7 @@ type Props<T extends Item> = {
 
 const WrapList = <T extends Item>({ items, children }: Props<T>) => (
   <List>
-    {items.map(item => (
+    {items.map((item) => (
       <ListItem key={item.id}>{children(item)}</ListItem>
     ))}
   </List>

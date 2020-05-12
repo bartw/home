@@ -24,7 +24,7 @@ export default () => {
           { name: `twitter:card`, content: `summary` },
           { name: `twitter:creator`, content: "Bart Wijnants" },
           { name: `twitter:title`, content: "Bart Wijnants" },
-          { name: `twitter:description`, content: "About Bart Wijnants" }
+          { name: `twitter:description`, content: "About Bart Wijnants" },
         ]}
       />
       <App theme={theme} toggleTheme={toggleTheme} />

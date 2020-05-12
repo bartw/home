@@ -12,14 +12,14 @@ const light = {
   background: "#eee",
   backgroundContrast: "#ccc",
   text: "#222",
-  textContrast: "#666"
+  textContrast: "#666",
 };
 
 const dark = {
   background: "#222",
   backgroundContrast: "#666",
   text: "#ddd",
-  textContrast: "#bbb"
+  textContrast: "#bbb",
 };
 
 export const colors = { light, dark };
@@ -28,7 +28,7 @@ export const spacing = {
   extraSmall: "5px",
   small: "10px",
   medium: "15px",
-  large: "20px"
+  large: "20px",
 };
 
 export const fontSize = {
@@ -37,12 +37,12 @@ export const fontSize = {
   large: "1.5em",
   extraLarge: "2em",
   extraExtraLarge: "3em",
-  extraExtraExtraLarge: "4em"
+  extraExtraExtraLarge: "4em",
 };
 
 export const lineHeight = {
   small: "1em",
-  medium: "1.25em"
+  medium: "1.25em",
 };
 
 const GlobalStyle = createGlobalStyle<{ theme: Theme }>`
