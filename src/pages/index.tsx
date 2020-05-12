@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Helmet from "react-helmet";
+import { Helmet } from "react-helmet";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle, { colors } from "../global-style";
 import App from "../components/app";
