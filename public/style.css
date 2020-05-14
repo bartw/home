@@ -1,0 +1,112 @@
+:root {
+  --bg-color: #222;
+  --text-color: #ccc;
+  --text-contrast-color: #777;
+  --accent-color: #1a936f;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+section {
+  margin-top: 8rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+header {
+  font-family: "IBM Plex Mono", monospace;
+  margin-top: 4rem;
+}
+
+header .avatar {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header .avatar {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+
+header img {
+  width: 8rem;
+}
+
+header h1 {
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+header p {
+  margin: 0.5rem;
+  margin-left: 2px;
+}
+
+.bio p {
+  margin-top: 1rem;
+  text-align: justify;
+}
+
+.bio p:first-letter {
+  font-size: 1.5em;
+}
+
+.bio a {
+  text-decoration: underline;
+  color: var(--text-color);
+}
+
+.bio a:hover {
+  text-decoration: none;
+}
+
+.bio blockquote {
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+  border-left: 3px solid var(--text-contrast-color);
+  color: var(--text-contrast-color);
+}
+
+.experience .job {
+  margin-top: 2rem;
+}
+
+.experience .range {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: var(--text-contrast-color);
+}
+
+.experience .summary {
+  display: flex;
+  margin-top: 1.5rem;
+  text-align: justify;
+}
+
+.experience .summary .icon {
+  margin-right: 1rem;
+  color: var(--accent-color);
+}
