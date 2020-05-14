@@ -66,7 +66,7 @@ header p {
 }
 
 .bio p {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   text-align: justify;
 }
 
@@ -75,12 +75,12 @@ header p {
 }
 
 .bio a {
-  text-decoration: underline;
-  color: var(--text-color);
-}
-
-.bio a:hover {
   text-decoration: none;
+  color: var(--text-color);
+  background-size: 100% 15%;
+  background-repeat: repeat-x;
+  background-position: left 0% bottom 10%;
+  background-image: linear-gradient(var(--accent-color), var(--accent-color));
 }
 
 .bio blockquote {
