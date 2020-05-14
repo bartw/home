@@ -18,7 +18,7 @@ section {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 640px;
   margin: 0 auto;
   padding: 1rem;
   padding-bottom: 2rem;
@@ -121,4 +121,8 @@ footer {
 footer a {
   color: var(--text-color);
   margin: 0 1.5rem;
+}
+
+footer a:hover {
+  transform: translateY(-2px);
 }
